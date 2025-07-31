@@ -39,7 +39,7 @@ __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_UC8179.git"
 _START_SEQUENCE = (
     b"\x01\x04\x07\x07\x3f\x3f"  # POWERSETTING: VGH=20V, VGL=-20V, VDH=15V, VDL=-15V
     b"\x04\x00"  # POWERON
-    b"\x00\x01\x13"  # PANELSETTING: 0x13
+    b"\x00\x01\x03"  # PANELSETTING
     b"\x61\x04\x00\x00\x00\x00"  # TRES: resolution
     b"\x15\x01\x00"  # DUALSPI: single SPI
     b"\x50\x02\x10\x07"  # WRITE_VCOM
@@ -68,9 +68,13 @@ class UC8179(EPaperDisplay):
         if "highlight_color" in kwargs:
             color_ram_command = 0x13
             black_ram_command = 0x10
+            panel_setting = 0x03
         else:
             color_ram_command = None
             black_ram_command = 0x13
+            panel_setting = 0x13
+
+        start_sequence[10] = panel_setting
 
         super().__init__(
             bus,

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Unlicense
 
-"""Simple test script for 5.83" 648x480 monochrome display (ThinkInk_583_Mono_AAAMFGN)."""
+"""Simple test script for 5.83" 648x480 tricolor display (ThinkInk_583_Tricolor_AABMFGNR)."""
 
 import time
 
@@ -33,6 +33,7 @@ display = adafruit_uc8179.UC8179(
     busy_pin=epd_busy,
     rotation=180,
     black_bits_inverted=True,
+    highlight_color=0xff0000,
     colstart=0
 )
 
