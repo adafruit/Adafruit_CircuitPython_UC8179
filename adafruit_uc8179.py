@@ -15,8 +15,9 @@ Implementation Notes
 
 **Hardware:**
 
-.. todo:: Add links to any specific hardware product page(s), or category page(s).
-  Use unordered list & hyperlink rST inline format: "* `Link Text <url>`_"
+7.5in 800x480 Monochrome eInk / ePaper - Bare Display - UC8179 Chipset: https://www.adafruit.com/product/6396
+5.83in 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179 Chipset: https://www.adafruit.com/product/6397
+7.5in 800x480 Tri-Color eInk / ePaper - Bare Display: https://www.adafruit.com/product/6415
 
 **Software and Dependencies:**
 
@@ -88,5 +89,5 @@ class UC8179(EPaperDisplay):
             write_color_ram_command=color_ram_command,
             refresh_display_command=0x12,
             refresh_time=16,
-            always_toggle_chip_select=True
+            always_toggle_chip_select=True,
         )

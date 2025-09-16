@@ -33,8 +33,8 @@ display = adafruit_uc8179.UC8179(
     busy_pin=epd_busy,
     rotation=180,
     black_bits_inverted=True,
-    highlight_color=0xff0000,
-    colstart=0
+    highlight_color=0xFF0000,
+    colstart=0,
 )
 
 g = displayio.Group()

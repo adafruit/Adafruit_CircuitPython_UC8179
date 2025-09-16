@@ -24,14 +24,12 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
-
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    7.5" 800x480 Monochrome eInk / ePaper - Bare Display - UC8179 Chipset<https://www.adafruit.com/product/6396>
+    5.83" 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179 Chipset<https://www.adafruit.com/product/6397>
+    7.5" 800x480 Tri-Color eInk / ePaper - Bare Display<https://www.adafruit.com/product/6415>
 
 .. toctree::
     :caption: Other Links
